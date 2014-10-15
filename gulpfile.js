@@ -1,6 +1,6 @@
 var source = require('vinyl-source-stream');
 var gulp = require('gulp');
-var gulpSass = require('gulp-sass');
+var sass = require('gulp-ruby-sass');
 var browserify = require('browserify');
 
 gulp.task('js', function () {
@@ -11,9 +11,10 @@ gulp.task('js', function () {
 });
 
 gulp.task('css', function () {
-	gulp.src('./main.scss')
-		.pipe(gulpSass())
-		.pipe(gulp.dest('./build'));
+	return gulp.src('main.scss')
+		.pipe(sass())
+		.on('error', function (err) { console.log(err.message); })
+		.pipe(gulp.dest('build'));
 });
 
 gulp.task('default', ['css','js']);

@@ -15,14 +15,16 @@ sys	0m0.069s
 
 ```
 time ./node_modules/.bin/gulp
-[17:20:45] Using gulpfile ~/sandboxes/obt-test/gulpfile.js
-[17:20:45] Starting 'css'...
-[17:20:45] Finished 'css' after 8.56 ms
-[17:20:45] Starting 'js'...
-[17:20:45] Finished 'js' after 16 ms
-[17:20:45] Starting 'default'...
-[17:20:45] Finished 'default' after 7.4 μs
-        0.80 real         0.69 user         0.10 sys
+[18:05:32] Using gulpfile ~/sandboxes/obt-test/gulpfile.js
+[18:05:32] Starting 'css'...
+[18:05:32] Starting 'js'...
+[18:05:32] Finished 'js' after 19 ms
+[18:05:33] gulp-ruby-sass: directory
+[18:05:33] gulp-ruby-sass: write main.css
+[18:05:33] Finished 'css' after 375 ms
+[18:05:33] Starting 'default'...
+[18:05:33] Finished 'default' after 11 μs
+        1.14 real         0.99 user         0.18 sys
 ```
 
 ## `make origami`
