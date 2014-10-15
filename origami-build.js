@@ -1,14 +1,14 @@
 var gulp = require('gulp');
-var obt = require('origami-build-tools');
+var build = require('origami-build-tools/lib/tasks/build');
 
 gulp.task('css', function() {
-	obt.build.sass(gulp, {});
+	build.sass(gulp, {});
 });
 
 gulp.task('js', function() {
-	obt.build.js(gulp, {});
+	build.js(gulp, {});
 });
 
 gulp.task('default', function () {
-	obt.build(gulp, {});
+	build(gulp, {});
 });

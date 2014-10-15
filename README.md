@@ -59,3 +59,17 @@ Compiling /Users/mandrews/sandboxes/obt-test/main.scss
 [18:16:57] Finished 'js' after 1.03 s
         3.08 real         4.83 user         0.60 sys
 ```
+
+## `make origami-build`
+
+```
+time ./node_modules/.bin/gulp --gulpfile origami-build.js
+[19:38:47] Using gulpfile ~/sandboxes/obt-test/origami-build.js
+[19:38:47] Starting 'default'...
+Browserifying /Users/mandrews/sandboxes/obt-test/main.js
+Compiling /Users/mandrews/sandboxes/obt-test/main.scss
+[19:38:48] Finished 'default' after 927 ms
+[19:38:48] gulp-ruby-sass: directory
+[19:38:48] gulp-ruby-sass: write main.css
+        2.52 real         2.35 user         0.31 sys
+```

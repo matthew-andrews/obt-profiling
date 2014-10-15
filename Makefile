@@ -1,6 +1,9 @@
 origami:
 	time ./node_modules/.bin/gulp --gulpfile origami.js
 
+origami-build:
+	time ./node_modules/.bin/gulp --gulpfile origami-build.js
+
 cli:
 	time ./node_modules/.bin/browserify main.js -o build/main.js && sass main.scss > build/main.css
 
