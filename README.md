@@ -31,12 +31,31 @@ time ./node_modules/.bin/gulp
 
 ```
 time ./node_modules/.bin/gulp --gulpfile origami.js
-[17:21:00] Using gulpfile ~/sandboxes/obt-test/origami.js
-[17:21:00] Starting 'default'...
+[18:10:13] Using gulpfile ~/sandboxes/obt-test/origami.js
+[18:10:13] Starting 'default'...
 Browserifying /Users/mandrews/sandboxes/obt-test/main.js
 Compiling /Users/mandrews/sandboxes/obt-test/main.scss
-[17:21:01] Finished 'default' after 849 ms
-[17:21:01] gulp-ruby-sass: directory
-[17:21:01] gulp-ruby-sass: write main.css
-        2.62 real         2.42 user         0.32 sys
+[18:10:14] Finished 'default' after 939 ms
+[18:10:14] gulp-ruby-sass: directory
+[18:10:14] gulp-ruby-sass: write main.css
+        2.89 real         2.68 user         0.35 sys
+```
+
+## `make origami-parallel`
+
+```
+time make _origami-parallel -j2
+./node_modules/.bin/gulp --gulpfile origami.js js
+./node_modules/.bin/gulp --gulpfile origami.js css
+[18:16:56] Using gulpfile ~/sandboxes/obt-test/origami.js
+[18:16:56] Using gulpfile ~/sandboxes/obt-test/origami.js
+[18:16:56] Starting 'js'...
+Browserifying /Users/mandrews/sandboxes/obt-test/main.js
+[18:16:56] Starting 'css'...
+Compiling /Users/mandrews/sandboxes/obt-test/main.scss
+[18:16:56] Finished 'css' after 11 ms
+[18:16:56] gulp-ruby-sass: directory
+[18:16:56] gulp-ruby-sass: write main.css
+[18:16:57] Finished 'js' after 1.03 s
+        3.08 real         4.83 user         0.60 sys
 ```
