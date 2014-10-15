@@ -1,0 +1,7 @@
+{
+  "name": "obt-test",
+  "main": [
+    "main.scss",
+    "main.js"
+  ]
+}

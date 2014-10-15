@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "browserify": "^6.1.0",
+    "gulp": "^3.8.8",
+    "gulp-sass": "^1.1.0",
+    "origami-build-tools": "https://github.com/Financial-Times/origami-build-tools/tarball/master",
+    "vinyl-source-stream": "^1.0.0"
+  }
+}
